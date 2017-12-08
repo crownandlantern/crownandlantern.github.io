@@ -16,21 +16,9 @@ layout: default
 		<!--app portfolio-->
 		{% for app in site.mobile-apps %}
 
-			<div class="row">
-				{% capture oddeven %}{% cycle 'odd', 'even' %}{% endcapture %}
-
-				<!--odd-->
-				{% if oddeven == 'odd' %}
-					{% include mobile-apps/phone-image.html %}
-					{% include mobile-apps/app-description.html %}
-				{% endif %}
-
-				<!--even-->
-				{% if oddeven == 'odd' %}
-					{% include mobile-apps/app-description.html %}
-					{% include mobile-apps/phone-image.html %}
-				{% endif %}
-
+			<div class="row mobile-app__item">
+				{% include mobile-apps/phone-image.html %}
+				{% include mobile-apps/app-description.html %}
 			</div>
 		{% endfor %}
 
