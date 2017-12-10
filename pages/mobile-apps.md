@@ -1,6 +1,7 @@
 ---
 title: Mobile Apps
 permalink: "/apps/"
+show-in-menu: true
 layout: mobile-apps
 ---
 
