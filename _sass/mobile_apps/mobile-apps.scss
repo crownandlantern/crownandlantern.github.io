@@ -1,3 +1,12 @@
+hr.mobile-app__item__separator {
+  max-width: unset;
+  margin-bottom: 1rem;
+}
+
 .mobile-app__item {
   margin-bottom: 5rem;
+}
+
+section.features .feature-item h3.mobile-app__item__title {
+  font-size: 4rem;
 }

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="features" id="features">
+<section class="features">
 	<div class="container">
 
 		<!--heading-->
@@ -13,14 +13,22 @@ layout: default
 			<p>{{ content }}</p>
 		</div>
 
-		<!--app portfolio-->
-		{% for app in site.mobile-apps %}
-
-			<div class="row mobile-app__item">
-				{% include mobile-apps/phone-image.html %}
-				{% include mobile-apps/app-description.html %}
-			</div>
-		{% endfor %}
-
 	</div>
 </section>
+
+<!--app portfolio-->
+{% for app in site.mobile-apps %}
+
+	<section class="features {% cycle 'bg-primary', '' %}">
+		<div class="container">
+
+			<div class="row mobile-app__item">
+
+				{% include mobile-apps/app-description.html %}
+				{% include mobile-apps/phone-image.html %}
+			</div>
+
+		</div>
+	</section>
+
+{% endfor %}

@@ -56,7 +56,9 @@
                 color: white;
             }
         }
-        &.navbar-shrink {
+
+        // disable navbar not showing until scroll
+        //&.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
             background-color: white;
             .navbar-brand {
@@ -73,6 +75,6 @@
                     color: $theme-primary;
                 }
             }
-        }
+        //}
     }
 }

@@ -1,15 +1,9 @@
 header.masthead.masthead--crown-and-lantern {
 
   background-image: url('/img/banners/flowers.jpeg');
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
 
-  .masthead--crown-and-lantern__text-container {
-
-    background-color: black;
-    padding: 1.5rem;
-
-    .masthead--crown-and-lantern__text {
-      height: 5rem;
-      width: 5rem;
-    }
-  }
 }
