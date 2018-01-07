@@ -17,18 +17,31 @@ layout: default
 </section>
 
 <!--app portfolio-->
-{% for app in site.mobile-apps %}
+<section class="features mobile-apps-portfolio">
+	<div class="container h-100">
 
-	<section class="features {% cycle 'bg-primary', '' %}">
-		<div class="container">
+		<div class="row h-100">
 
-			<div class="row mobile-app__item">
+			<!--phone image-->
+			<div class="col-6">
+				<div class="sticky-top d-flex flex-column">
 
-				{% include mobile-apps/app-description.html %}
-				{% include mobile-apps/phone-image.html %}
+					<div class="my-5"></div>
+
+					<div>
+						{% include mobile-apps/phone-image.html %}
+					</div>
+
+				</div>
 			</div>
 
+			<!--app descriptions-->
+			<div class="col-6">
+				{% for app in site.mobile-apps %}
+					{% include mobile-apps/app-description.html %}
+				{% endfor %}
+			</div>
 		</div>
-	</section>
 
-{% endfor %}
+	</div>
+</section>

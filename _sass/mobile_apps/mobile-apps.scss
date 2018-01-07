@@ -1,12 +1,10 @@
 @import "../global/global";
 
-hr.mobile-app__item__separator {
-  max-width: unset;
-  margin-bottom: 1rem;
-}
+.mobile-apps-portfolio {
+  .device-container {
 
-.mobile-app__item {
-  margin-bottom: 5rem;
+    width: 60%!important;
+  }
 }
 
 section.features .feature-item h3.mobile-app__item__title {
