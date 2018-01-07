@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<section class="features">
+<section class="mobile-apps-intro">
 	<div class="container">
 
 		<!--heading-->
-		<div class="section-heading text-center">
+		<div class="section-heading text-center mx-5">
 			<h1>Apps, Apps, Apps</h1>
 			<p class="text-muted">Everyone's already on their phone, why fight them?</p>
 			<hr>
@@ -36,7 +36,11 @@ layout: default
 			</div>
 
 			<!--app descriptions-->
-			<div class="col-6">
+			<div class="col-6 h-100"
+			     data-spy="scroll"
+			     data-target="#scrollspy-target"
+			     data-offset="200">
+
 				{% for app in site.mobile-apps %}
 					{% include mobile-apps/app-description.html %}
 				{% endfor %}

@@ -4,8 +4,18 @@
 
 			<!--screen-->
 			<div class="screen">
-				<!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-				<img src="" class="img-fluid" alt="">
+				<div id="scrollspy-target" class="list-group">
+					{% for app in site.mobile-apps %}
+
+						<a class="list-group-item list-group-item-action"
+						   href="#mobile-app-description-{{ forloop.index }}">
+
+							<!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+							<img src="{{ app.photo }}" class="img-fluid" alt="">
+						</a>
+
+					{% endfor %}
+				</div>
 			</div>
 
 			<!--button-->

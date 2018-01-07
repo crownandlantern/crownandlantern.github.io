@@ -1,12 +1,35 @@
 @import "../global/global";
 
-.mobile-apps-portfolio {
+section.mobile-apps-intro {
+  padding-bottom: 0;
+}
+
+section.mobile-apps-portfolio {
+
+  padding-top: 40px;
+
   .device-container {
 
     width: 60%!important;
+
+    .list-group-item {
+      padding: 0;
+      margin-bottom: 0;
+      border: 0;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
   }
 }
 
 section.features .feature-item h3.mobile-app__item__title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
